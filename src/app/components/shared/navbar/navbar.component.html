@@ -14,12 +14,9 @@
             <li class="nav-item active" routerLinkActive="active">
                 <a class="nav-link" routerLink="home">Home </a>
             </li>
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink="search">Search</a>
-            </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <form class="form-inline my-2 my-lg-0" method="GET" action="/search">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search ..." name="q">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
