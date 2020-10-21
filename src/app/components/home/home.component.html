@@ -1,1 +1,14 @@
-<p>home works!</p>
+<div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4" *ngFor="let song of releases">
+        <div class="card">
+            <img [src]="song.images[0].url" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ song.name }}</h5>
+                <p class="card-text">{{ song.artists[0].name }}</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">{{ song.release_date | date }}</small>
+            </div>
+        </div>
+    </div>
+</div>
