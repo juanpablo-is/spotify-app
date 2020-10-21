@@ -1,7 +1,7 @@
 <div class="row row-cols-1 row-cols-md-3">
     <div class="col mb-4" *ngFor="let song of releases">
         <div class="card">
-            <img [src]="song.images[0].url" class="card-img-top" alt="...">
+            <img [src]="song.images | images" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{ song.name }}</h5>
                 <p class="card-text">{{ song.artists[0].name }}</p>
