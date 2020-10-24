@@ -16,6 +16,8 @@ import { ROUTES } from './app.routes';
 // Pipes
 import { ImagesPipe } from './pipes/images.pipe';
 import { CardComponent } from './components/shared/card/card.component';
+import { SafePipe } from './safe.pipe';
+import { CardItemComponent } from './components/shared/card-item/card-item.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { CardComponent } from './components/shared/card/card.component';
     ArtistComponent,
     NavbarComponent,
     ImagesPipe,
-    CardComponent
+    CardComponent,
+    SafePipe,
+    CardItemComponent
   ],
   imports: [
     BrowserModule,

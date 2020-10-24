@@ -1,8 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    --greenPrincipal: #1dd05d;
+}
+
 body {
     background-color: black;
     color: white !important;
+}
+
+p {
+    padding: 0;
+    margin: 0;
 }
 
 hr {
@@ -15,7 +24,7 @@ hr {
 
 .img-circle {
     border-radius: 100%;
-    width: 150px;
+    width: 300px;
 }
 
 .card-title,
@@ -34,6 +43,24 @@ hr {
 .img-thumb {
     width: 50px;
     height: 50px;
+}
+
+.df-1 {
+    flex: 1;
+}
+
+.number {
+    color: var(--greenPrincipal);
+}
+
+.main-text {
+    font-size: 80px;
+}
+
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 30px;
 }
 
 
