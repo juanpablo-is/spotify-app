@@ -1,1 +1,20 @@
-<p>artist works!</p>
+<div class="w-100">
+    <div class="d-flex justify-content-center align-items-center p-5">
+        <div class="d-flex flex-column df-1">
+            <div class="d-flex align-items-center">
+                <p># {{ artist.popularity }}</p>
+                <span class="badge badge-pill badge-success">{{ artist.type |uppercase }}</span>
+            </div>
+            <h1 class="df-1 main-text">{{ artist.name }}</h1>
+            <p><span class="number">{{ artist.followers.total | number }}</span> followers</p>
+        </div>
+        <img [src]="artist.url" alt="" class="img-circle">
+    </div>
+
+    <div class="p-5">
+        <h3>Albumes</h3>
+        <div class="grid-list">
+            <app-card-item *ngFor="let item of albums" [item]="item"></app-card-item>
+        </div>
+    </div>
+</div>
