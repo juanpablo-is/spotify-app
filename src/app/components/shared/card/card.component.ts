@@ -9,6 +9,7 @@ import { Router } from "@angular/router";
 export class CardComponent {
 
   @Input() items: any[] = [];
+  @Input() pathHome: boolean = true;
 
   constructor(private route: Router) { }
 

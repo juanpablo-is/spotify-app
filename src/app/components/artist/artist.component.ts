@@ -21,11 +21,12 @@ export class ArtistComponent {
         .subscribe(data => {
           this.artist = data;
           this.artist.url = this.artist['images'][0].url;
+          this.artist.total = this.artist.followers.total;
         });
 
       this.spotify.getAlbumsByArtist(id)
         .subscribe(data => {
-          data.splice(7);
+          data.splice(6);
           this.albums = data;
         });
     });

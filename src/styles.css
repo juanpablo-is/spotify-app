@@ -27,8 +27,7 @@ hr {
     width: 300px;
 }
 
-.card-title,
-.card-text {
+.card-title, .card-text {
     color: black;
 }
 
@@ -45,6 +44,30 @@ hr {
     height: 50px;
 }
 
+.absolute-card {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    color: gray;
+}
+
+.card-home:hover>div {
+    display: flex;
+}
+
+.absolute-card .title {
+    color: white;
+    font-size: 28px;
+}
+
 .df-1 {
     flex: 1;
 }
@@ -59,10 +82,9 @@ hr {
 
 .grid-list {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 30px;
 }
-
 
 /* Animaciones */
 

@@ -1,14 +1,11 @@
 <div class="card-columns m-5">
     <div class="col mb-4" *ngFor="let item of items">
         <a [routerLink]="['/artist', item.id]">
-            <div class="card puntero">
+            <div class="card puntero card-home">
                 <img [src]="item.images | images" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">{{ item.name }}</h5>
-                    <!-- <p class="card-text">{{ item.artists[0].name }}</p> -->
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">{{ item.release_date | date }}</small>
+                <div class="justify-content-center absolute-card">
+                    <h5 class="title">{{ item.name }}</h5>
+                    <h5 *ngIf="pathHome" class="author">{{ item.artists[0].name }}</h5>
                 </div>
             </div>
         </a>

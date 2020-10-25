@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardItemComponent {
 
-  @Input() item: any = {};
+  @Input() albums: any = {};
 
   constructor() { }
 }
