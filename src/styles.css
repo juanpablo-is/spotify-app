@@ -86,6 +86,10 @@ hr {
     gap: 30px;
 }
 
+.card-item {
+    height: 100%;
+}
+
 /* Animaciones */
 
 .animated {

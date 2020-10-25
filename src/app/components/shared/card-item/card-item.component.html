@@ -1,7 +1,7 @@
 <div class="grid-list">
     <div *ngFor="let item of albums">
-        <a [routerLink]="['/artist']">
-            <div class="card puntero">
+        <!-- <a [routerLink]="['/artist']"> -->
+            <div class="card puntero card-item">
                 <img [src]="item.images | images" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{ item.name }}</h5>
@@ -11,6 +11,6 @@
                     <small class="text-muted">{{ item.release_date | date }}</small>
                 </div>
             </div>
-        </a>
+        <!-- </a> -->
     </div>
 </div>

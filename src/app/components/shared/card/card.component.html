@@ -1,6 +1,6 @@
 <div class="card-columns m-5">
     <div class="col mb-4" *ngFor="let item of items">
-        <a [routerLink]="['/artist', item.id]">
+        <a [routerLink]="['/artist', pathHome ? item.artists[0].id : item.id]">
             <div class="card puntero card-home">
                 <img [src]="item.images | images" class="card-img-top" alt="...">
                 <div class="justify-content-center absolute-card">
